@@ -221,13 +221,21 @@ flowchart TD
 <!-- AH -->
 
 ---
-layout: section
+layout: center
 ---
 
 # Web-Formulare
-## Offline-Geschichte
 
-<!-- AP -->
+- Gut strukturierte Web-Formulare (Material Design)
+- Voll Responsiv, Basiseigenschaften für Barrierefreiheit
+- Zwischenspeicherung des aktuellen Standes
+- Prüfung auf Vollständigkeit / Plausibilität bei Einreichung (Vorteil zu externen Dateien)
+- **Offline Fähigkeit**
+
+<div class="mt-4 flex flex-wrap justify-center gap-4">
+  <img src="./audit1.webp" class="h-52" />
+  <img src="./audit2.webp" class="h-52" />
+</div>
 
 ---
 layout: section
