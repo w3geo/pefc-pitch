@@ -111,12 +111,63 @@ layout: center
     - *hochverfügbarer Server 24/7*
     - *DSGVO (Kundendaten)*
 
+<!-- AP -->
+
+---
+layout: section
+---
+
+# Schlaglichter
+
+<ph-flashlight class="text-7xl text-amber-300 mx-auto mt-2 block" />
+
+<!-- AH -->
 
 ---
 layout: center
 ---
 
-# Authentifizierung
+# Identity Provider, Authentifizierung
+
+- Bereits Erfahrungen mit USP, eAMA Partner-Login, ID Austria
+- Kenntnis auch der zugehörigen Antragsprozesse
+
+<img src="./idp.png" class="mt-4 h-76">
+
+---
+layout: center
+---
+
+# Verknüpfen von Accounts und Duplikatvermeidung
+- Eindeutige Attribute (LFBIS-Nummer) ermöglichen Account-Verknüpfung ohne Zutun des Benutzers
+- Mitarbeiterdelegierung zum gemeinsamen Zugriff auf den gleichen Account (USP)
+- Gemeinsame Eigenschaften (LFBIS-Nummer, Adresse) ermöglichen **Duplikatvermeidung** in der Datenbank
+
+<div class="mt-4 text-sm" style="display:grid; grid-template-columns:2fr 1fr 1fr 2fr; gap:8px;">
+  <div style="grid-column:1/4" class="bg-green-100 text-green-700 font-bold text-xs text-center rounded py-1 tracking-wide">UNTERNEHMENSBEZOGEN</div>
+  <div style="grid-column:4/5" class="bg-blue-100 text-blue-700 font-bold text-xs text-center rounded py-1 tracking-wide">PERSONENBEZOGEN</div>
+
+  <div style="grid-column:1/2" class="bg-green-50 border border-green-300 rounded-lg p-3 flex flex-col gap-2">
+    <div class="font-bold text-green-700 text-base text-center">eAMA Partner-Login</div>
+  </div>
+  <div style="grid-column:2/4" class="bg-green-50 border border-green-300 rounded-lg p-3 flex flex-col gap-2">
+    <div class="font-bold text-green-700 text-base text-center">Unternehmensserviceportal</div>
+    <div class="bg-green-700 text-white text-xs rounded-full text-center py-1 px-2">Mitarbeiterdelegierung</div>
+  </div>
+  <div style="grid-column:4/5" class="bg-blue-50 border border-blue-300 rounded-lg p-3">
+    <div class="font-bold text-blue-700 text-base text-center">ID Austria</div>
+  </div>
+
+  <div style="grid-column:1/3" class="bg-green-100 text-green-800 text-xs rounded text-center py-1 px-2">Land- und forstwirtschaftliche Betriebe mit LFBIS Nummer</div>
+  <div style="grid-column:3/4" class="bg-slate-100 text-slate-500 text-xs rounded text-center py-1 px-2 border border-slate-200">Andere Betriebe (CoC)</div>
+  <div style="grid-column:4" class="bg-blue-100 text-blue-700 text-xs rounded text-center py-1 px-2 border border-blue-200">Natürliche Personen</div>
+
+  <div style="grid-column:1/5" class="bg-slate-50 border border-slate-200 rounded-lg py-2 px-4 text-center text-xs">
+    <span class="text-slate-500">Adressen aus dem amtlichen Adressregister</span>
+  </div>
+</div>
+
+
 
 <!-- AH -->
 
@@ -130,7 +181,7 @@ layout: center
 <!-- AH -->
 
 ---
-layout: center
+layout: two-cols
 ---
 
 # EUDR
@@ -139,7 +190,33 @@ layout: center
 - Kenntnis der Prozesse rund um EUDR-Sorgfaltserklärungen und Referenznummern
 - Technisches Know-how zur Anbindung an die **TRACES**-Datenbank
 
-<img src="./eudr-flow.svg" class="mt-4 mx-auto h-72" />
+::right::
+
+```mermaid {theme: 'neutral', scale: 0.65}
+flowchart TD
+    subgraph std ["Standard-Prozess"]
+        direction TB
+        A["App erstellt Sorgfaltserklärung (Entwurf)"] --> B["Nutzer bestätigt ✓"]
+        B --> C(["PEFC: bevollmächtigter Vertreter aller Mitglieder"])
+    end
+    subgraph alt ["Alternativ"]
+        direction TB
+        D["Nutzer gibt bestehende Referenznummer ein"]
+    end
+    C --> DB[(Referenznummer in Datenbank)]
+    D --> DB
+    DB -->|"Detailabfragen"| TR[(TRACES-Datenbank)]
+
+    classDef green fill:#15803d,color:white,stroke:#15803d
+    classDef pill fill:#16a34a,color:white,stroke:#16a34a
+    classDef blue fill:#1d4ed8,color:white,stroke:#1d4ed8
+    classDef db fill:#1e3a5f,color:white,stroke:#1e3a5f
+
+    class A,B green
+    class C pill
+    class D blue
+    class DB,TR db
+```
 
 <!-- AH -->
 
