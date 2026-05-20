@@ -45,3 +45,19 @@ Example (EUDR slide):
 Every slide has a presenter note (`<!-- AP -->` or `<!-- AH -->`) indicating which presenter delivers it:
 - **AP** — Allgemeiner Intro section (Thema: BML/Wald, Datenbank/Design, Serverlandschaften/Hosting, soFisch/Istmobil) and Web-Formulare
 - **AH** — Authentifizierung, EUDR, Duplikatvermeidung und mehr, Altdaten-Übernahme slides
+
+## Icons
+
+Slidev uses [unplugin-icons](https://github.com/antfu/unplugin-icons). Icons are used as **Vue components** — NOT as UnoCSS `i-*` classes.
+
+Format: `<{collection}-{icon-name} class="..." />`
+
+Installed icon sets: `@iconify-json/carbon`, `@iconify-json/ph` (Phosphor), `@iconify-json/svg-spinners`
+
+Examples:
+```md
+<ph-flashlight class="text-6xl text-amber-300 mx-auto block" />
+<carbon-flash class="text-4xl text-yellow-400" />
+```
+
+Browse available icons at https://icones.js.org/
