@@ -44,11 +44,15 @@ layout: section
 <!-- AP -->
 
 ---
+layout: center
+---
 
 # Thema: BML / Wald
 
 <!-- AP -->
 
+---
+layout: center
 ---
 
 # Datenbank / Design
@@ -56,11 +60,15 @@ layout: section
 <!-- AP -->
 
 ---
+layout: center
+---
 
 # Serverlandschaften / Hosting
 
 <!-- AP -->
 
+---
+layout: center
 ---
 
 # soFisch / Istmobil
@@ -76,12 +84,16 @@ layout: section
 <!-- AH -->
 
 ---
+layout: center
+---
 
 # Altdaten-Übernahme Var. 1
 ## via Alt-Login
 
 <!-- AH -->
 
+---
+layout: center
 ---
 
 # EUDR
@@ -112,6 +124,8 @@ layout: section
 
 <!-- AH -->
 
+---
+layout: center
 ---
 
 # Altdaten-Übernahme Var. 2
