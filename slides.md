@@ -36,10 +36,16 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-layout: section
+layout: center
 ---
 
-# Allgemeiner Intro
+# w3geo GmbH
+
+- Seit 2015 als w3geo
+- Klassische Software- und Datenbankentwicklung + Geospatial Solutions (Geo-Informatik)
+- Wichtigster Anspruch für jedes Projekt: Dem Benutzer eine möglichst perfekte Umsetzung zu bieten
+  - UX = User-Experience ganz oben auf der Prioritätenliste.
+
 
 <!-- AP -->
 
@@ -47,36 +53,67 @@ layout: section
 layout: center
 ---
 
-# Thema: BML / Wald
+# Umsetzungskonzept 1 / 4
 
-<!-- AP -->
+- Rollenabhängige Benutzeroberfläche im Client, umgesetzt ausschließlich mit Open Source Frameworks (z.B. VUE)
+  - Erfahrung aus div. Projekten, Beispiel ISTMobil:
+    - *Große Datenbank mit tausenen Kunden, Verkehrsunternehmern, Disponenten, Administratoren usw.*
+    - *Die Oberfläche wird rollenabhängig dargestellt*
+    - *Für bestimmte Rollen responsive Versionen, z.B. Fahrzeug-Applikation*
 
----
-layout: center
----
-
-# Datenbank / Design
-
-<!-- AP -->
-
----
-layout: center
----
-
-# Serverlandschaften / Hosting
-
-<!-- AP -->
+<div class="mt-4 flex flex-wrap justify-center gap-4">
+  <img src="./istmobil03.jpg" class="h-52" />
+  <img src="./istmobil07.jpg" class="h-52" />
+</div>
 
 ---
 layout: center
 ---
 
-# soFisch / Istmobil
+# Umsetzungskonzept 2 / 4
 
-<!-- AP -->
+- Responsive Web-Formulare anstatt Excel-Sheets
+ - Offline fähig (z.B. im Wald)
+ - Erfahrung aus div. Projekten, z.B. GZA, eStrab, sofisch
+
+<div class="mt-4 flex flex-wrap justify-center gap-4">
+  <img src="./gza03.jpg" class="h-52" />
+  <img src="./sofisch06.jpg" class="h-52" />
+</div>
+
 
 ---
-layout: section
+layout: center
+---
+
+# Umsetzungskonzept 3 / 4
+
+- Relationale Datenbank, geeignet für große Datenmengen und performative Suchen (z.B. PostgreSQL)
+- Logging sämtlicher relevanter Ereignisse in Form eines sg. "Activity Trails"
+  - bietet auch Verknüpfung zu DB-Entitäten / anderen Ereignissen
+- Audit Tools für Auswertungen / Controlling
+  - *Beispiel ISTMobil - Fahrzeug-Controlling*
+
+<div class="mt-4 flex flex-wrap justify-center gap-4">
+  <img src="./istmobil10.jpg" class="h-52" />
+  <img src="./istmobil11.jpg" class="h-52" />
+</div>
+
+
+---
+layout: center
+---
+
+# Umsetzungskonzept 4 / 4
+
+- Hosting in skalierbarer, performativer Server-Infrastruktur
+  - Beispiel ISTMobil:
+    - *hochverfügbarer Server 24/7*
+    - *DSGVO (Kundendaten)*
+
+
+---
+layout: center
 ---
 
 # Authentifizierung
@@ -131,3 +168,5 @@ layout: center
 # Altdaten-Übernahme Var. 2
 
 <!-- AH -->
+
+
