@@ -50,7 +50,7 @@ layout: center
 <!-- AP -->
 
 ---
-layout: center
+layout: default
 ---
 
 # Umsetzungskonzept 1 / 4
@@ -67,7 +67,7 @@ layout: center
 </div>
 
 ---
-layout: center
+layout: default
 ---
 
 # Umsetzungskonzept 2 / 4
@@ -83,7 +83,7 @@ layout: center
 
 
 ---
-layout: center
+layout: default
 ---
 
 # Umsetzungskonzept 3 / 4
@@ -101,7 +101,7 @@ layout: center
 
 
 ---
-layout: center
+layout: default
 ---
 
 # Umsetzungskonzept 4 / 4
