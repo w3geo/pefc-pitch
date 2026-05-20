@@ -130,7 +130,8 @@ layout: center
 # Identity Provider, Authentifizierung
 
 - Bereits Erfahrungen mit USP, eAMA Partner-Login, ID Austria
-- Kenntnis auch der zugehörigen Antragsprozesse
+- Kenntnis der zugehörigen Antragsformalitäten
+- Berücksichtigung der unterschiedlichen Charakteristika
 
 <img src="./idp.png" class="mt-4 h-76">
 
@@ -139,7 +140,7 @@ layout: center
 ---
 
 # Verknüpfen von Accounts und Duplikatvermeidung
-- Eindeutige Attribute (LFBIS-Nummer) ermöglichen Account-Verknüpfung ohne Zutun des Benutzers
+- Eindeutige Attribute (LFBIS-Nummer) erleichtern Account-Verknüpfung
 - Mitarbeiterdelegierung zum gemeinsamen Zugriff auf den gleichen Account (USP)
 - Gemeinsame Eigenschaften (LFBIS-Nummer, Adresse) ermöglichen **Duplikatvermeidung** in der Datenbank
 
@@ -172,19 +173,12 @@ layout: center
 <!-- AH -->
 
 ---
-layout: center
----
-
-# Altdaten-Übernahme Var. 1
-## via Alt-Login
-
-<!-- AH -->
-
----
-layout: two-cols
+layout: two-cols-header
 ---
 
 # EUDR
+
+::left::
 
 - Bereits Erfahrung mit EUDR durch Entwicklung des **BMLUK EUDR-Meldung**-Tools
 - Kenntnis der Prozesse rund um EUDR-Sorgfaltserklärungen und Referenznummern
@@ -192,19 +186,22 @@ layout: two-cols
 
 ::right::
 
-```mermaid {theme: 'neutral', scale: 0.65}
-flowchart TD
+<div class="pl-8">
+
+```mermaid {theme: 'neutral', scale: 0.6}
+flowchart TB
     subgraph std ["Standard-Prozess"]
         direction TB
-        A["App erstellt Sorgfaltserklärung (Entwurf)"] --> B["Nutzer bestätigt ✓"]
+        A["App erstellt Sorgfaltserklärung"] --> B["Nutzer bestätigt ✓"]
         B --> C(["PEFC: bevollmächtigter Vertreter aller Mitglieder"])
     end
     subgraph alt ["Alternativ"]
         direction TB
         D["Nutzer gibt bestehende Referenznummer ein"]
+        D --> E["App verifiziert Nummer über TRACES  ✓"]
     end
-    C --> DB[(Referenznummer in Datenbank)]
-    D --> DB
+    std --> DB[(Referenznummer in Datenbank)]
+    alt --> DB
     DB -->|"Detailabfragen"| TR[(TRACES-Datenbank)]
 
     classDef green fill:#15803d,color:white,stroke:#15803d
@@ -214,9 +211,11 @@ flowchart TD
 
     class A,B green
     class C pill
-    class D blue
+    class D,E blue
     class DB,TR db
 ```
+
+</div>
 
 <!-- AH -->
 
@@ -238,11 +237,39 @@ layout: center
 </div>
 
 ---
-layout: section
+layout: center
 ---
 
-# Duplikatvermeidung und mehr
-## Räumliche Information / Zukunftsinfos
+optional:
+
+# Altdaten-Übernahme
+- Erfordert Export/Kopie der Bestandsdatenbank
+- Nur zu empfehlen für bereits strukturierte Daten
+- Erspart Nutzerfrust bei Launch der neuen Applikation
+
+<div class="flex items-start justify-center mt-8">
+  <div class="flex flex-col items-center w-32">
+    <div class="w-12 h-12 rounded-full bg-green-700 text-white flex items-center justify-center font-bold text-xl">1</div>
+    <div class="mt-2 text-center text-sm leading-tight text-slate-700">Alt-App<br>Login</div>
+  </div>
+  <div class="mt-6 h-0.5 w-10 bg-green-300 shrink-0"></div>
+  <div class="flex flex-col items-center w-32">
+    <div class="w-12 h-12 rounded-full bg-green-700 text-white flex items-center justify-center font-bold text-xl">2</div>
+    <div class="mt-2 text-center text-sm leading-tight text-slate-700">Daten<br>sichten</div>
+  </div>
+  <div class="mt-6 h-0.5 w-10 bg-green-300 shrink-0"></div>
+  <div class="flex flex-col items-center w-32">
+    <div class="w-12 h-12 rounded-full bg-green-700 text-white flex items-center justify-center font-bold text-xl">3</div>
+    <div class="mt-2 text-center text-sm leading-tight text-slate-700">Verifizieren<br>&amp; Anpassen</div>
+  </div>
+  <div class="mt-6 h-0.5 w-10 bg-green-300 shrink-0"></div>
+  <div class="flex flex-col items-center w-32">
+    <div class="w-12 h-12 rounded-full bg-green-800 text-white flex items-center justify-center font-bold text-xl">✓</div>
+    <div class="mt-2 text-center text-sm leading-tight text-slate-700">Daten<br>übernommen</div>
+  </div>
+</div>
+
+
 
 <!-- AH -->
 
@@ -250,8 +277,15 @@ layout: section
 layout: center
 ---
 
-# Altdaten-Übernahme Var. 2
+# Räumliche Information
+
+- Räumliche Daten sind "einfach da":
+  - **Adressen** von Unternehmen und Benutzern (amtliches Adressregister)
+  - **Bezirke**, in denen ein Forstbetrieb Waldflächen bewirtschaftet
+- Mögliche Ausbaustufe: Erfassung von Waldflächen mit höherer Genauigkeit (Grundstück)
+- **Potenzial der räumlichen Daten:**
+  - Duplikatvermeidung bei Besitzerwechsel — gleiche Adresse signalisiert möglichen Zusammenhang
+  - Karte der zertifizierten Mitglieder nach Bezirk / Dichte-Auswertung
+  - Regionale Filterung &amp; Auswertungen für Controlling und Reporting
 
 <!-- AH -->
-
-
