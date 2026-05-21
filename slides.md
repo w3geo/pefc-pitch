@@ -1,6 +1,6 @@
 ---
 # try also 'default' to start simple
-theme: seriph
+theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: ./background.webp
@@ -289,3 +289,13 @@ layout: center
   - Regionale Filterung &amp; Auswertungen für Controlling und Reporting
 
 <!-- AH -->
+
+---
+layout: center
+---
+
+# Danke für die Aufmerksamkeit
+
+<ph-handshake-thin class="text-7xl text-amber-400 mx-auto mt-4 block" />
+
+<!-- AP -->
