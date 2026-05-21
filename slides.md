@@ -298,4 +298,4 @@ layout: center
 
 <ph-handshake-thin class="text-7xl text-amber-400 mx-auto mt-4 block" />
 
-<!-- AP -->
+<PoweredBySlidev class="abs-br m-8" />
