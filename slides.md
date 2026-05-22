@@ -107,7 +107,7 @@ layout: default
 # Umsetzungskonzept 4 / 4
 
 - Hosting in skalierbarer, performativer Server-Infrastruktur
-  -ISO 27001 zertifiziertes Rechenzentrum 
+  - ISO 27001 zertifiziertes Rechenzentrum 
   - Serverstandort EU 
   - Continuous Integration und Deployment (CI/CD) 
 
