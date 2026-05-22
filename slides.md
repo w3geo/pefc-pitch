@@ -107,9 +107,9 @@ layout: default
 # Umsetzungskonzept 4 / 4
 
 - Hosting in skalierbarer, performativer Server-Infrastruktur
-  - Beispiel ISTMobil:
-    - *hochverfügbarer Server 24/7*
-    - *DSGVO (Kundendaten)*
+  -ISO 27001 zertifiziertes Rechenzentrum 
+  - Serverstandort EU 
+  - Continuous Integration und Deployment (CI/CD) 
 
 <!-- AP -->
 
@@ -122,6 +122,23 @@ layout: section
 <ph-flashlight class="text-7xl text-amber-300 mx-auto mt-2 block" />
 
 <!-- AH -->
+
+---
+layout: center
+---
+
+# Web-Formulare
+
+- Gut strukturierte Web-Formulare (Material Design)
+- Voll Responsiv, Basiseigenschaften für Barrierefreiheit
+- Zwischenspeicherung des aktuellen Standes
+- Prüfung auf Vollständigkeit / Plausibilität bei Einreichung (Vorteil zu externen Dateien)
+- **Offline Fähigkeit**
+
+<div class="mt-4 flex flex-wrap justify-center gap-4">
+  <img src="./audit1.webp" class="h-52" />
+  <img src="./audit2.webp" class="h-52" />
+</div>
 
 ---
 layout: center
@@ -218,23 +235,6 @@ flowchart TB
 </div>
 
 <!-- AH -->
-
----
-layout: center
----
-
-# Web-Formulare
-
-- Gut strukturierte Web-Formulare (Material Design)
-- Voll Responsiv, Basiseigenschaften für Barrierefreiheit
-- Zwischenspeicherung des aktuellen Standes
-- Prüfung auf Vollständigkeit / Plausibilität bei Einreichung (Vorteil zu externen Dateien)
-- **Offline Fähigkeit**
-
-<div class="mt-4 flex flex-wrap justify-center gap-4">
-  <img src="./audit1.webp" class="h-52" />
-  <img src="./audit2.webp" class="h-52" />
-</div>
 
 ---
 layout: center
