@@ -134,6 +134,7 @@ layout: center
 - Zwischenspeicherung des aktuellen Standes
 - Prüfung auf Vollständigkeit / Plausibilität bei Einreichung (Vorteil zu externen Dateien)
 - **Offline Fähigkeit**
+- Fallback: "Analoge" Formulare als Upload
 
 <div class="mt-4 flex flex-wrap justify-center gap-4">
   <img src="./audit1.webp" class="h-52" />
