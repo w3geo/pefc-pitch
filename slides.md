@@ -194,7 +194,7 @@ layout: center
 layout: two-cols-header
 ---
 
-# EUDR
+# EUDR – EU Entwaldungsverordnung
 
 ::left::
 
