@@ -191,7 +191,7 @@ layout: center
 <!-- AH -->
 
 ---
-layout: two-cols-header
+layout: two-cols
 ---
 
 # EUDR – EU Entwaldungsverordnung
@@ -218,19 +218,25 @@ flowchart TB
         D["Nutzer gibt bestehende Referenznummer ein"]
         D --> E["App verifiziert Nummer über TRACES  ✓"]
     end
+    subgraph coc ["Chain of Custody"]
+        F["CoC-Unternehmen fügt Lieferanten hinzu"]
+    end
     std --> DB[(Referenznummer in Datenbank)]
     alt --> DB
     DB -->|"Detailabfragen"| TR[(TRACES-Datenbank)]
+    DB -->|"Lieferantenzuordnung"| coc
 
     classDef green fill:#15803d,color:white,stroke:#15803d
     classDef pill fill:#16a34a,color:white,stroke:#16a34a
     classDef blue fill:#1d4ed8,color:white,stroke:#1d4ed8
     classDef db fill:#1e3a5f,color:white,stroke:#1e3a5f
+    classDef orange fill:#c2410c,color:white,stroke:#c2410c
 
     class A,B green
     class C pill
     class D,E blue
     class DB,TR db
+    class F orange
 ```
 
 </div>
