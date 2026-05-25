@@ -3,7 +3,7 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: ./background.webp
+background: ./assets/background.webp
 # some information about your slides (markdown enabled)
 title: PEFC-EUDR-RED Datenbankapplikation
 info: |
