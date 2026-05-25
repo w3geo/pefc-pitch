@@ -12,12 +12,17 @@ This is a [Slidev](https://sli.dev) presentation project for a pitch to PEFC.
 
 ## Static Assets
 
-All static assets live in `public/` and are referenced with `./filename` paths (e.g. `./background.webp`). Do **not** use absolute paths like `/filename` in `<img src>` attributes — those trigger Vite's import guard. Do **not** reference `public/` in the path.
+Assets are split into two directories depending on how they are used:
+
+- **`assets/`** — images embedded in slide content via `<img>` or markdown. These go through Vite's markdown processing pipeline. Reference them as `./assets/my-image.png`.
+- **`public/`** — slide backgrounds set via the `background:` frontmatter key. These do **not** go through markdown processing and must be served as static files. Reference them as `./my-background.webp` (no `public/` prefix, no `assets/` prefix).
+
+Do **not** use absolute paths like `/filename` in `<img src>` attributes — those trigger Vite's import guard.
 
 Current assets:
-- `public/background.webp` — forest background (title slide)
-- `public/w3geo-logo.png` — presenter company logo (bottom-right, title slide, `brightness(3)` filter)
-- `public/pefc-logo.png` — addressee logo (bottom-left, title slide)
+- `public/background.webp` — forest background (title slide, referenced as `./background.webp` in frontmatter)
+- `assets/w3geo-logo.png` — presenter company logo (bottom-right, title slide, `brightness(3)` filter)
+- `assets/pefc-logo.png` — addressee logo (bottom-left, title slide)
 
 ## Title Slide Conventions
 
