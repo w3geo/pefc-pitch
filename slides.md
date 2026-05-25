@@ -28,8 +28,8 @@ duration: 15min
 
 Webbasiertes System zur digitalen Verwaltung von PEFC-Teilnehmern, EUDR-Integration und RED-Selbsterklärung
 
-<img src="./w3geo-logo.png" class="abs-br m-8 h-12" style="filter: brightness(3)" />
-<img src="./pefc-logo.png" class="abs-bl m-8 h-12" />
+<img src="./assets/w3geo-logo.png" class="abs-br m-8 h-12" style="filter: brightness(3)" />
+<img src="./assets/pefc-logo.png" class="abs-bl m-8 h-12" />
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -62,8 +62,8 @@ layout: default
     - *Für bestimmte Rollen responsive Versionen, z.B. Fahrzeug-Applikation*
 
 <div class="mt-4 flex flex-wrap justify-center gap-4">
-  <img src="./istmobil03.jpg" class="h-52" />
-  <img src="./istmobil07.jpg" class="h-52" />
+  <img src="./assets/istmobil03.jpg" class="h-52" />
+  <img src="./assets/istmobil07.jpg" class="h-52" />
 </div>
 
 ---
@@ -77,8 +77,8 @@ layout: default
  - Erfahrung aus div. Projekten, z.B. GZA, eStrab, sofisch
 
 <div class="mt-4 flex flex-wrap justify-center gap-4">
-  <img src="./gza03.jpg" class="h-52" />
-  <img src="./sofisch06.jpg" class="h-52" />
+  <img src="./assets/gza03.jpg" class="h-52" />
+  <img src="./assets/sofisch06.jpg" class="h-52" />
 </div>
 
 
@@ -95,8 +95,8 @@ layout: default
   - *Beispiel ISTMobil - Fahrzeug-Controlling*
 
 <div class="mt-4 flex flex-wrap justify-center gap-4">
-  <img src="./istmobil10.jpg" class="h-52" />
-  <img src="./istmobil11.jpg" class="h-52" />
+  <img src="./assets/istmobil10.jpg" class="h-52" />
+  <img src="./assets/istmobil11.jpg" class="h-52" />
 </div>
 
 
@@ -137,8 +137,8 @@ layout: center
 - Fallback: "Analoge" Formulare als Upload
 
 <div class="mt-4 flex flex-wrap justify-center gap-4">
-  <img src="./audit1.webp" class="h-52" />
-  <img src="./audit2.webp" class="h-52" />
+  <img src="./assets/audit1.webp" class="h-52" />
+  <img src="./assets/audit2.webp" class="h-52" />
 </div>
 
 ---
@@ -151,7 +151,7 @@ layout: center
 - Kenntnis der zugehörigen Antragsformalitäten
 - Berücksichtigung der unterschiedlichen Charakteristika
 
-<img src="./idp.png" class="mt-4 h-76">
+<img src="./assets/idp.png" class="mt-4 h-76">
 
 ---
 layout: center
