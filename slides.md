@@ -57,7 +57,7 @@ layout: default
 
 - Rollenabhängige Benutzeroberfläche im Client, umgesetzt ausschließlich mit Open Source Frameworks (z.B. VUE)
   - Erfahrung aus div. Projekten, Beispiel ISTMobil:
-    - *Große Datenbank mit tausenen Kunden, Verkehrsunternehmern, Disponenten, Administratoren usw.*
+    - *Große Datenbank mit tausenden Kunden, Verkehrsunternehmern, Disponenten, Administratoren usw.*
     - *Die Oberfläche wird rollenabhängig dargestellt*
     - *Für bestimmte Rollen responsive Versionen, z.B. Fahrzeug-Applikation*
 
