@@ -291,7 +291,7 @@ layout: center
   - **Bezirke**, in denen ein Forstbetrieb Waldflächen bewirtschaftet
 - Mögliche Ausbaustufe: Erfassung von Waldflächen mit höherer Genauigkeit (Grundstück)
 - **Potenzial der räumlichen Daten:**
-  - Duplikatvermeidung bei Besitzerwechsel — gleiche Adresse signalisiert möglichen Zusammenhang
+  - Duplikatvermeidung bei Betriebsübergabe — gleiche Adresse signalisiert möglichen Zusammenhang
   - Karte der zertifizierten Mitglieder nach Bezirk / Dichte-Auswertung
   - Regionale Filterung &amp; Auswertungen für Controlling und Reporting
 
